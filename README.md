@@ -19,7 +19,7 @@ parse-dashboard --config ./parse-dashboard-config.json
 ```
 
 # API doc
-[api-doc.jsonc](https://github.com/zukhok/zincsearch/blob/main/api-doc.jsonc)
+[api-doc.jsonc](https://github.com/zukhok/vote/blob/main/api-doc.jsonc)
 
 # prefix
 http://localhost:1024/functions/
