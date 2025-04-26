@@ -1,0 +1,144 @@
+{
+  // user模块
+  "user": {
+    // 注册
+    "signUp": {
+      "req": {
+        "email": "string",
+        "password": "string"
+      },
+      "res": {
+        "email": "string",
+        "code": 0
+      }
+    },
+    // 激活
+    "activate": {
+      "req": {
+        "userId": "string"
+      },
+      "res": {
+        "sessionToken": "string",
+        "code": 0
+      }
+    },
+    // 登录
+    "logIn": {
+      "req": {
+        "email": "string",
+        "password": "string"
+      },
+      "res": {
+        "sessionToken": "string",
+        "code": 0
+      }
+    }
+  },
+  // vote模块
+  "vote": {
+    // 查看候选人
+    "getCandidates": {
+      "req": {},
+      "res": {
+        "candidates": {
+          "id": "string"
+        },
+        "code": 0
+      }
+    },
+    // 投票
+    "vote": {
+      "req": {
+        "ids": [
+          "string"
+        ]
+      },
+      "res": {
+        "candidates": {
+          "id": {
+            "name": "string",
+            "votes": "uint"
+          }
+        },
+        "code": 0
+      }
+    },
+    // 查看我的投票
+    "getMyVotes": {
+      "req": {},
+      "res": {
+        "candidates": {
+          "id": {
+            "name": "string",
+            "votes": "uint"
+          }
+        },
+        "code": 0
+      }
+    },
+    // 增加候选人
+    "admin-addCandidates": {
+      "req": {
+        "names": [
+          "string"
+        ]
+      },
+      "res": {
+        "candidates": {
+          "id": {
+            "name": "string",
+            "votes": "uint"
+          }
+        },
+        "code": 0
+      }
+    },
+    // 更新候选人
+    "admin-updateCandidates": {
+      "req": {
+        "candidates": {
+          "id": "name"
+        }
+      },
+      "res": {
+        "candidates": {
+          "id": {
+            "name": "string",
+            "votes": "uint"
+          }
+        },
+        "code": 0
+      }
+    },
+    // 删除候选人
+    "admin-deleteCandidates": {
+      "req": {
+        "ids": [
+          "string"
+        ]
+      },
+      "res": {
+        "candidates": {
+          "id": {
+            "name": "string",
+            "votes": "uint"
+          }
+        },
+        "code": 0
+      }
+    },
+    // 查看候选人
+    "admin-getCandidates": {
+      "req": {},
+      "res": {
+        "candidates": {
+          "id": {
+            "name": "string",
+            "votes": "uint"
+          }
+        },
+        "code": 0
+      }
+    }
+  }
+}

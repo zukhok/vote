@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "serverURL": "http://localhost:1024",
+      "appId": "myAppId",
+      "masterKey": "myMasterKey",
+      "appName": "vote"
+    }
+  ]
+}

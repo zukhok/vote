@@ -1,0 +1,30 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: vote-deployment
+  labels:
+    name: vote-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: vote
+  template:
+    metadata:
+      name: vote-pod
+      labels:
+        app: vote
+    spec:
+      containers:
+        - name: vote-container
+          image: vote
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          env:
+            - name: host
+              value: 192.168.123.248
+            - name: vhost
+              value: 192.168.65.1

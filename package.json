@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@types/node": "^22.14.1",
+    "@types/nodemailer": "^6.4.17",
+    "@types/parse": "^3.0.9",
+    "nodemailer": "^6.10.1",
+    "parse-server": "^8.1.0",
+    "yup": "^1.6.1"
+  },
+  "type": "module"
+}
